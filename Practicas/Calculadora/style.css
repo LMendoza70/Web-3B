@@ -6,36 +6,45 @@
     height: 100vh;
     background-color: #007c91;
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5vw;
 }
 .title{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 4em;
+    margin-bottom: .05em;
     text-align: center;
     font-weight:bold;
 }
 .subtitle{
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: .05em;
     text-align: center;
 }
 .input{
     width: 95%;
-    padding: 10px;
-    margin: 15px;
+    padding: 1.5%;
+    margin: 2%;
     border-width: 2px;
     border-radius: 7px;
     border-color: #ccc;
     border-style:solid;
 }
 .button{
-    padding: 10px;
-    margin: 15px;
+    padding: 1.5%;
+    margin: 2%;
     width: 95%;
     background-color: #4cb2c9;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     color: #fff;
+}
+.botonera{
+    display: flex;
+    width: 100%;
+}
+
+@media(max-width:768px){
+   .botonera{
+        flex-direction: column;
+   }
 }
