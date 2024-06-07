@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica Validacion</h1>
+        <h2 class="subtitle">Registro de usuario</h2>
+
+        <form action="" method="get">
+            <label for="numTrab">Numero de trabajador</label>
+            <input class="input" type="number" 
+            placeholder="Numero de trabajador"
+            name="numTrab" id="numTrab" required>
+
+            <label for="name">Nombre de usuario : </label>
+            <input type="text" class="input" required
+            placeholder="Nombre" maxlength="25">
+
+            <label for="app">Apellido paterno : </label>
+            <input type="text" class="input" required
+            placeholder="Apellido Paterno" maxlength="25">
+
+            <label for="apm">Apellido materno : </label>
+            <input type="text" class="input" required
+            placeholder="Apellido Materno" maxlength="25">
+
+            <label for="edad">Edad : </label>
+            <input type="number" class="input" required
+            min="18" max="99" placeholder="Edad">
+
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" 
+            class="input" required maxlength="50"
+            placeholder="Email">
+
+            <label for="pass">Password : </label>
+            <input type="password" class="input" minlength="8"
+            required placeholder="Password" maxlength="20" 
+            name="pass" id="pass">
+
+            <label for="pass2">Confirmar Password : </label>
+            <input type="password" class="input" minlength="8"
+            required placeholder="confirmar Password" maxlength="20"
+            name="pass2" id="pass2">
+
+            <input type="submit" class="button" 
+            onclick="validaPass()">
+        </form>
+        <script src="./main.js"></script>
+    </div>
+    
+</body>
+</html>
